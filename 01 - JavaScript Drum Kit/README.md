@@ -13,9 +13,9 @@
 		* 讓keydown與聲音同步，設定每次按下時將audio.currentTime重置為0
 	* console.dir(any object);  可透過此console查看audio特性或元素
 
-2. 透過forEach()檢視每一個.key
+2. 透過forEach()檢視每一個.key
 	* NodeList可直接使用forEach()
-	* ”transitionend” 事件會在CSS transition結束後觸發
+	* ”transitionend” 事件會在CSS transition結束後觸發
 	
 3. **removeTransition()** 移除.playing樣式
 	* 針對單一個css屬性名稱做移除，因此排除propertyName !== ‘transform’
