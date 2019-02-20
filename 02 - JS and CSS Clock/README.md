@@ -3,7 +3,7 @@
 ### JavaScript
 1. **setInterval(setDate, 1000);**
   * 以指定的毫秒數值為間隔，持續執行函式。
-  * new Date()取得當下時間
+  * new Date()取得當下時間
     * Date.getSeconds()
     * Date.getMinutes()
     * Date.getHours()
