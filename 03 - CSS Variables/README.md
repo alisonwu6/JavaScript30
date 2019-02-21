@@ -1,5 +1,8 @@
 # 03 - CSS Variables
 
+### 功能說明
+* 透過JavaScript操作CSS變數值
+
 ### HTML設定
 *參考JavaScript大全 - 15.9 HTML表單*
   * input的*type*屬性值

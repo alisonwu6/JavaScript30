@@ -1,6 +1,7 @@
 # 04 - Array Cardio Day 1
 
-## 操作Array的.filter(),.map(),.sort(),.reduce()方法
+### 功能說明
+* 使用Array的.filter(),.map(),.sort(),.reduce()方法
 
 ### Array.prototype.filter(predicate)：回傳通過predicate測試的陣列元素，此為新陣列。
   * Filter the list of inventors for those who were born in the 1500's

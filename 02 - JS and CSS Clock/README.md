@@ -1,5 +1,8 @@
 # 02 - JS and CSS Clock
 
+### 功能說明
+* 使用JavaScript與CSS實作時鐘
+
 ### JavaScript
 1. **setInterval(setDate, 1000);**
   * 以指定的毫秒數值為間隔，持續執行函式。

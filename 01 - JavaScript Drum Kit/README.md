@@ -1,5 +1,8 @@
 # 01 - JavaScript Drum Kit
 
+### 功能說明
+* 按下鍵盤特定按鍵，搭配特定聲音效果
+
 ### HTML設定
 *參考JavaScript大全 - 15.4.3 Dataset屬性*
   * Dataset屬性：以”data-“開頭的屬性都會被視為合法的屬性
