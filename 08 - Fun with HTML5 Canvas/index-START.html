@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+</head>
+
+<body>
+  <canvas id="draw"></canvas>
+  <script>
+    const canvas = document.querySelector('#draw');
+    const ctx = canvas.getContext('2d'); // 獲取一個”CanvasRenderingContext2D物件“
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    ctx.strokeStyle = '#BADA55'; // 線條的顏色、間曾或圖樣
+    ctx.lineJoin = 'round'; // 頂點要如何描繪
+    ctx.lineCap = 'round'; // 線條的端點要如何描繪
+    ctx.lineWidth = 100;
+    // ctx.globalCompositeOperatio n = 'mutiply'; // 如何把新像素與他們底下的像素結合
+
+    let isDrawing = false;
+    let lastX = 0;
+    let lastY = 0;
+    let hue = 0;
+    let direction = true;
+
+    function draw(e) {
+      if (!isDrawing) return; // stop the function from running when they are not moused down
+      // console.log(e);
+
+      // hue
+      ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+
+      ctx.beginPath(); // 開始一個新路徑
+      // start from
+      ctx.moveTo(lastX, lastY); // 在(lastX, lastY)開始一個新的子路徑
+      // go to 
+      ctx.lineTo(e.offsetX, e.offsetY); // 新增一個線段，從(lastX, lastY)連至(e.offsetX, e.offsetY)
+      ctx.stroke(); // 畫出線段需呼叫stroke方法
+
+      [lastX, lastY] = [e.offsetX, e.offsetY];
+
+      hue++;
+      if (hue >= 360) {
+        hue = 0;
+      }
+
+      if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+        direction = !direction;
+      }
+      if (direction) {
+        ctx.lineWidth++;
+      } else {
+        ctx.lineWidth--;
+      }
+    }
+
+    canvas.addEventListener('mousedown', (e) => {
+      isDrawing = true;
+      [lastX, lastY] = [e.offsetX, e.offsetY]; // 事件啟動，將lastX,lastY更新
+    });
+
+    canvas.addEventListener('mousemove', draw);
+
+    canvas.addEventListener('mouseup', () => isDrawing = false);
+    canvas.addEventListener('mouseout', () => isDrawing = false);
+  </script>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+    }
+  </style>
+
+</body>
+
+</html>
