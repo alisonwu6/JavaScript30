@@ -1,10 +1,10 @@
 # 26 - Stripe Follow Along Nav
 
 ### 功能說明
-* 
+* mouseenter時產生符合內容大小的下拉選單
 
 ### JavaScript
-* 使用**arrow function**可以繼承來自**parent function**的this值
+* 使用**arrow function**可以繼承來自**parent function**的this值
 
 * dropdown元素的寬高與位置設定
 ```
