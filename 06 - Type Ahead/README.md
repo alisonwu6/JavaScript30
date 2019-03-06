@@ -1,8 +1,5 @@
 # 06 - Ajax Type Ahead
 
-### 功能說明
-* 在input輸入文字，透過Ajax塞選出符合的字串，並加上黃底樣式。
-
 ### JavaScipt 
 * Web APIs
   * Fetch API()
