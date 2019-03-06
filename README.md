@@ -1,6 +1,10 @@
-* 教材來自：https://javascript30.com/
-* 參考書籍：JavaScript大全
+### 學習來源
+* 作者：[Wes Bos](https://wesbos.com/courses)
+* 教材：https://javascript30.com/
 
+<hr>
+
+### 學習紀錄
 |   Day   |   網頁畫面   |   筆記  |
 |:------- |:-----------:| -------:|
 |01|[JavaScript Drum Kit](https://alisonwu6.github.io/JavaScript30/01%20-%20JavaScript%20Drum%20Kit/index-START.html)|[筆記](https://github.com/alisonwu6/JavaScript30/tree/master/01%20-%20JavaScript%20Drum%20Kit)|
